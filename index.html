@@ -5,123 +5,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nancy Steve | Portfolio</title>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nancy Steve – Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Playfair Display', serif;
       color: #1f2937;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem;
       line-height: 1.7;
-    }
-    header, section {
-      margin-bottom: 3rem;
     }
     h1, h2, h3 {
       color: #111827;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-    }
-    h3 {
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-    p {
-      text-align: justify;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
-    .card {
-      border: 1px solid #e5e7eb;
-      border-radius: 0.5rem;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    @media(min-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #2563eb;
-      color: white;
-      border: none;
-      border-radius: 0.375rem;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background-color: #1e40af;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: underline;
-    }
   </style>
 </head>
-<body>
-
-  <header style="text-align: center;">
-    <h1>Nancy Steve</h1>
-    <p><em>Bilingual Web Developer | E-commerce Specialist | Certified Virtual Assistant</em></p>
-    <p>Elegance in code. Precision in support. Excellence in every click.</p>
+<body class="p-6 max-w-5xl mx-auto">
+  <header class="text-center mb-12">
+    <h1 class="text-4xl font-bold tracking-wide mb-2">Nancy Steve</h1>
+    <p class="italic text-lg">Bilingual Web Developer | E-commerce Specialist | Certified Virtual Assistant</p>
+    <p class="mt-2">Elegance in code. Precision in support. Excellence in every click.</p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p class="text-justify">
       I’m Nancy Steve—a multilingual digital artisan with a deep appreciation for refined design, structured logic, and seamless user experiences. With a foundation of remote-first internships and global certifications, I build digital experiences that elegantly marry purpose with polish. Whether translating brand stories into aesthetic interfaces or managing client operations with gentle precision, my mission remains simple: to deliver exquisite digital results with grace, professionalism, and heart.
     </p>
   </section>
 
-  <section>
-    <h2>Highlighted Works</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Elegant E-Commerce Store (Magento)</h3>
-        <ul>
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold mb-4">Highlighted Works</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="border rounded-xl shadow p-4">
+        <h3 class="text-xl font-bold">Elegant E-Commerce Store (Magento)</h3>
+        <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Custom product filtering and secure checkout integration</li>
           <li>22% sales conversion boost within one month</li>
           <li>Mobile-first design with intuitive navigation</li>
         </ul>
       </div>
-      <div class="card">
-        <h3>Digital Portfolio Website (Duda)</h3>
-        <ul>
+      <div class="border rounded-xl shadow p-4">
+        <h3 class="text-xl font-bold">Digital Portfolio Website (Duda)</h3>
+        <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Minimalist layout with strong structural coherence</li>
           <li>Multilingual, SEO-optimised, and content-rich</li>
           <li>Custom scripting for interactive elements</li>
         </ul>
       </div>
-      <div class="card">
-        <h3>SEO Revamp for Small Business</h3>
-        <ul>
+      <div class="border rounded-xl shadow p-4">
+        <h3 class="text-xl font-bold">SEO Revamp for Small Business</h3>
+        <ul class="list-disc list-inside mt-2 space-y-1">
           <li>65% organic traffic growth in under 90 days</li>
           <li>First-page ranking for key niche terms</li>
           <li>Backlink strategy and metadata overhaul</li>
         </ul>
       </div>
-      <div class="card">
-        <h3>VA Dashboard & Workflow System</h3>
-        <ul>
+      <div class="border rounded-xl shadow p-4">
+        <h3 class="text-xl font-bold">VA Dashboard & Workflow System</h3>
+        <ul class="list-disc list-inside mt-2 space-y-1">
           <li>Real-time client collaboration environment</li>
           <li>30% reduction in client administrative workload</li>
           <li>Automated task templates and dashboards</li>
@@ -130,10 +76,9 @@
     </div>
   </section>
 
-  <section>
-    <h2>Technical Tools</h2>
-    <p>Here’s what I use to build magic:</p>
-    <ul>
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold mb-4">Technical Tools</h2>
+    <ul class="list-disc list-inside pl-4 space-y-1">
       <li>Web: Magento, Duda, HTML, CSS, JavaScript, PHP</li>
       <li>E-commerce: WooCommerce, Shopify, payment integration</li>
       <li>Office & Remote: Microsoft 365, Google Workspace, Trello, Slack</li>
@@ -142,9 +87,9 @@
     </ul>
   </section>
 
-  <section>
-    <h2>What Makes Me Different</h2>
-    <ul>
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold mb-4">What Makes Me Different</h2>
+    <ul class="list-disc list-inside pl-4 space-y-1">
       <li>Fluency in English & French – ideal for global collaboration</li>
       <li>Balance of aesthetics and backend logic</li>
       <li>Experience across start-ups and cross-border teams</li>
@@ -152,13 +97,12 @@
     </ul>
   </section>
 
-  <section style="text-align: center;">
-    <h2>Let’s Connect</h2>
-    <p>Email: <a href="mailto:Ballynallly@gmail.com">Ballynallly@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/nancy-steve-913aa8351" target="_blank">Nancy Steve on LinkedIn</a></p>
-    <p><em>Remote opportunities welcome – freelance, part-time or full-time.</em></p>
-    <a class="btn" href="#" onclick="alert('Resume download coming soon!')">Download My Résumé</a>
+  <section class="mb-12 text-center">
+    <h2 class="text-2xl font-semibold mb-2">Let’s Connect</h2>
+    <p>Email: <a href="mailto:Ballynallly@gmail.com" class="text-blue-600 underline">Ballynallly@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/nancy-steve-913aa8351" class="text-blue-600 underline" target="_blank">Nancy Steve on LinkedIn</a></p>
+    <p class="mt-2 italic">Remote opportunities welcome – freelance, part-time or full-time.</p>
+    <a href="resume.pdf" class="inline-block bg-blue-600 text-white px-4 py-2 rounded mt-4">Download My Résumé</a>
   </section>
-
 </body>
 </html>
